@@ -1,6 +1,3 @@
-import 'dart:collection';
-import 'dart:io';
-
 void main() {
   List<int> numbers = List.filled(5, 0, growable: true);
   print(numbers);
