@@ -7,7 +7,7 @@ String name = 'a',
     password = 'p',
     p1 = 'p',
     cp = 'p';
-List<String> item_name = ['xyz', 'xyz'];
+List<String> item_name = [];
 List<int> item_size = [];
 List<int> item_price = [];
 List<int> item_quantity = [];
@@ -39,9 +39,39 @@ void t_shirt() {
   item_size.add(quantity);
 }
 
-void shirt() {}
-void pent() {}
-void night_dress() {}
+void shirt() {
+  item_name.add('shirt');
+  print("enter size of shirt : (28,30,32,34,36,38,40)");
+  int size = int.parse(stdin.readLineSync().toString());
+  item_size.add(size);
+  print("price = 1499");
+  item_price.add(1499);
+  print("quantity : ");
+  int quantity = int.parse(stdin.readLineSync().toString());
+  item_size.add(quantity);
+}
+void pent() {
+  item_name.add('pent');
+  print("enter size of shirt : (28,30,32,34,36,38,40)");
+  int size = int.parse(stdin.readLineSync().toString());
+  item_size.add(size);
+  print("price = 2000");
+  item_price.add(2000);
+  print("quantity : ");
+  int quantity = int.parse(stdin.readLineSync().toString());
+  item_size.add(quantity);
+}
+void night_dress() {
+   item_name.add('night dress');
+  print("enter size of shirt : (28,30,32,34,36,38,40)");
+  int size = int.parse(stdin.readLineSync().toString());
+  item_size.add(size);
+  print("price = 500");
+  item_price.add(500);
+  print("quantity : ");
+  int quantity = int.parse(stdin.readLineSync().toString());
+  item_size.add(quantity);
+}
 void male() {
   print("what you want to buy ");
   print("1. t-shirt\n2. shirt\n3. pent\n4. night dress");
@@ -102,7 +132,7 @@ void items() {
     print("please enter valid option ");
     items();
   }
-  print("you want to add any product. ");
+  print("you want to add any product. "); 
   print("0 = yes\t1 = no");
   int option = int.parse(stdin.readLineSync().toString());
   if (option == 0) {
