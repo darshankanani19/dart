@@ -7,7 +7,8 @@ void main() {
     increament = increament + 3;
     number += increament;
     stdout.write(number);
-    stdout.write(" , ");
+
+    stdout.write("  ");
 
   }
   // increament = increament + 3;
