@@ -8,6 +8,8 @@ dynamic scan(dynamic value) {
     return stdin.readLineSync().toString();
   } else if (value == 'double') {
     return double.parse(stdin.readLineSync().toString());
+  }else if (value == 'bool') {
+    return bool.parse(stdin.readLineSync().toString());
   } else {
     return Null;
   }
@@ -18,4 +20,8 @@ void main() {
   print("enter value of number ");
   number = scan('string');
   print(number);
+  print("enter value of num ");
+  int num = scan('int');
+  print(num);
+  
 }
