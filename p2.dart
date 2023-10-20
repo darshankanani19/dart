@@ -2,10 +2,11 @@
 import 'dart:io';
 
 void main() {
-  int a = 0, b = 0;
+  int a = 0 , b = 0;
 
   print("a\t:\t");
-  a = int.parse(stdin.readLineSync().toString());
+  a =int.parse(stdin.readLineSync().toString());
+  
 
   print("b\t:\t");
   b = int.parse(stdin.readLineSync().toString());
