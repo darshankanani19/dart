@@ -1,0 +1,260 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
+void main()
+{
+  runApp(whatsapp());
+}
+class whatsapp extends StatelessWidget {
+
+var name = ['Darshan Kanani','Nevil','Sista (Shreya)','Fr Sahil Ssec','Fr Harsh Ssec','Fr Sejal Ssec','Fr Milan Ssec','Fr Tamanna Ssec','Fr Deep jodhani','Papa','A Rakeshkaka ','Fr Jay Ssec','Fr Prakash Ssec','Fr jenish Sinior'];
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blueGrey,
+          actions: [
+            Icon(Icons.camera_alt_outlined,color: Colors.white,),
+            SizedBox(
+              width: 15,
+            ),
+            Icon(Icons.search,color: Colors.white),
+            SizedBox(
+              width: 15,
+            ),
+            Icon(Icons.more_vert,color: Colors.white),
+          ],
+          title: Text(
+            'Whatsapp'
+                ,style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.normal,
+            color: Colors.white,
+
+          ),
+          ),
+        ),
+      body: Column(
+        children: [
+          Container(
+            width: double.infinity,
+            height: 30,
+            color: Colors.blueGrey,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                GestureDetector(
+
+                  child: Container(width: 50,
+
+                    child: Center(child: Icon(Icons.groups,size: 30,color: Colors.grey,)),
+                  ),
+                  onTap: (){
+                    Groups();
+                  },
+                ),
+                Container(
+                  width: 85,
+                  decoration: BoxDecoration(
+
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Chats',style: TextStyle(
+                      color: Colors.green,
+
+                    ),
+                    ),
+                  ),
+
+                ),
+
+                Container(
+                  width: 85,
+                  child: Center(
+                    child: Text(
+                      'Updates',style: TextStyle(
+                      color: Colors.grey,
+
+                    ),
+                    ),
+                  ),
+
+                ),
+                Container(
+                  width: 85,
+                  child: Center(
+                    child: Text(
+                      'Calls',style: TextStyle(
+                      color: Colors.grey,
+
+                    ),
+                    ),
+                  ),
+
+                )
+              ],
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            height: 730,
+            color: Colors.blueGrey.shade900,
+            child: ListView.builder(itemCount: name.length,itemBuilder: (BuildContext context, int index) {
+              return Padding(
+                padding: const EdgeInsets.only(top: 15.0),
+                child: ListTile(
+                    title: Text(name[index],style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 15),),
+                    leading: Container(
+                      height: 60,
+                      width: 60,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(60)),
+                color: Colors.blueGrey,
+                      ),
+                      child: Center(child: Icon(Icons.person,size: 50,),),
+                    ),
+                  subtitle: Text('Good Morning',style: TextStyle(color: Colors.white30),),
+                  trailing: Text('9-12-2023',style: TextStyle(color: Colors.white30),),
+                ),
+              );
+
+            },
+
+            ),
+          ),
+        ],
+      )
+      ),
+    );
+  }
+}
+
+class Groups extends StatelessWidget {
+
+  var name = ['Fun With Friends','Surties','Food Lovers','Flutter Developer','Database Management System '];
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.blueGrey,
+            actions: [
+              Icon(Icons.camera_alt_outlined,color: Colors.white,),
+              SizedBox(
+                width: 15,
+              ),
+              Icon(Icons.search,color: Colors.white),
+              SizedBox(
+                width: 15,
+              ),
+              Icon(Icons.more_vert,color: Colors.white),
+            ],
+            title: Text(
+              'Whatsapp'
+              ,style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontStyle: FontStyle.normal,
+              color: Colors.white,
+
+            ),
+            ),
+          ),
+          body: Column(
+            children: [
+              Container(
+                width: double.infinity,
+                height: 30,
+                color: Colors.blueGrey,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    GestureDetector(
+
+                      child: Container(width: 50,
+
+                        child: Center(child: Icon(Icons.groups,size: 30,color: Colors.grey,)),
+                      ),
+                      onTap: (){
+                        Groups();
+                      },
+                    ),
+                    Container(
+                      width: 85,
+                      decoration: BoxDecoration(
+
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Chats',style: TextStyle(
+                          color: Colors.green,
+
+                        ),
+                        ),
+                      ),
+
+                    ),
+
+                    Container(
+                      width: 85,
+                      child: Center(
+                        child: Text(
+                          'Updates',style: TextStyle(
+                          color: Colors.grey,
+
+                        ),
+                        ),
+                      ),
+
+                    ),
+                    Container(
+                      width: 85,
+                      child: Center(
+                        child: Text(
+                          'Calls',style: TextStyle(
+                          color: Colors.grey,
+
+                        ),
+                        ),
+                      ),
+
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                width: double.infinity,
+                height: 643,
+                color: Colors.blueGrey.shade900,
+                child: ListView.builder(itemCount: name.length,itemBuilder: (BuildContext context, int index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(top: 15.0),
+                    child: ListTile(
+                      title: Text(name[index],style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 15),),
+                      leading: Container(
+                        height: 60,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(60)),
+                          color: Colors.blueGrey,
+                        ),
+                        child: Center(child: Icon(Icons.person,size: 50,),),
+                      ),
+                      subtitle: Text('Good Morning'),
+                    ),
+                  );
+
+                },
+
+                ),
+              ),
+            ],
+          )
+      ),
+    );
+  }
+}
